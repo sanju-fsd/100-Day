@@ -1,0 +1,25 @@
+    .contact-section {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background:url(image.png)  no-repeat center center;
+      background-size: cover;       
+      background-position: center;  
+      background-repeat: no-repeat; 
+      border-radius: 15px;
+      padding: 30px;
+     margin: 20px 50px 20px 50px;
+    }
+    
+    .contact{
+      background-color: #fff;
+      border: #333;
+      border-radius: 15px;
+      padding: 30px;
+    }
+    
+    footer{
+      background: #66a183;
+      color: #fff;
+      padding: 40px 20px;
+    }
+   
