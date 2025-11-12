@@ -12,15 +12,10 @@
       position: absolute;
       top: 8px;
       right: 8px;
-      /* background-color: #007bff; */
       border: none;
-      padding: 8px 8px;
+      padding: 6px 7px;
       border-radius: 50%;
       color: white;
-    }
-
-    .add-to-cart-btn:hover {
-      /* background-color: #0056b3; */
     }
 
     .product-card {
