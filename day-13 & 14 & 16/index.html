@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Like</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>To-Do Like Application</h1>
+        <div class="input">
+            <input type="text" name="todo-input" id="todo-input" placeholder="Add your new task">
+            <button onclick="Addtodo()">Add Task</button>
+        </div>
+
+        <div class="todo-container">
+            <ul id="todo-list"></ul>
+        </div>
+
+
+<script>
+    function Addtodo(){
+        let todoInput = document.getElementById ("todo-input").value;
+        if (todoInput === "") return; 
+        let todoList = document.getElementById ("todo-list");
+        let li = document.createElement ("li");
+        li.innerHTML = `
+            <h3>${todoInput}</h3>
+            <button class="like-btn" onclick="toggleLike(this)">👍 Like</button>
+            <p class="like-text">Not Liked</p>
+            <button class="delete-btn" onclick="deleteTodo(this)">Delete</button>
+        `;
+        todoList.appendChild (li);
+        document.getElementById("todo-input").value = "";
+    }
+
+    function toggleLike(btn){
+        let Text = btn.nextElementSibling;
+
+        if (Text.innerText === "Not Liked"){
+            Text.innerText = "Liked";
+            btn.style.color = "blue";
+            btn.style.background= "#198754";
+        } else {
+            Text.innerText = "Not Liked";
+            btn.style.color = "white";
+            btn.style.background= "#0d6efd";
+
+        }
+    }
+    function deleteTodo(btn){
+        let li = btn.parentElement;
+        li.remove();
+    }
+</script>
+</body>
+</html>

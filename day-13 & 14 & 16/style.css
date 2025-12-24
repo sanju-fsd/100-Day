@@ -1,0 +1,80 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #0066cc;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+ .input {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+#todo-input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  .input button {
+        padding: 10px 20px;
+        cursor: pointer;
+        background: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .input button:hover {
+        background: #0b5ed7;
+    }
+#todo-container{
+    /* max-width: 500px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#todo-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#todo-list li {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.like-btn {
+    padding: 8px 14px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+.like-btn.Liked {
+    background: #198754;
+}
+.delete-btn {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border: none;
+    background: #dc3545;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
