@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+          rgba(0,0,0,0.6),
+          rgba(0,0,0,0.6)
+        ),
+        url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
+      background-size: cover;
+      background-position: center no-repeat ;
+
+}
+
+/* ================= TOP BAR ================= */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 22px;
+  background: #111827;
+  color: #fff;
+}
+
+#menuBtn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ================= DRAWER ================= */
+#drawer {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 270px;
+  height: 100%;
+  background: #1f2937;
+  color: white;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+#drawer.open {
+  left: 0;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #374151;
+}
+
+#closeBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= MENU ================= */
+.drawer-menu {
+  list-style: none;
+}
+
+.drawer-menu li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  color: #d1d5db;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.drawer-menu li a:hover,
+.drawer-menu li a.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* ================= BADGE ================= */
+#msgBadge {
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  padding: 3px 7px;
+  border-radius: 12px;
+}
+
+/* ================= OVERLAY ================= */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 999;
+}
+
+#overlay.show {
+  display: block;
+}
+
+/* ================= CONTENT ================= */
+#content {
+  padding: 30px;
+  
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}

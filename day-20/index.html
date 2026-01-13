@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="topbar">
+    <button id="menuBtn">☰</button>
+    <h1>Student Portal</h1>
+  </header>
+
+  <!-- BACKDROP -->
+  <div id="overlay"></div>
+
+  <!-- SIDE DRAWER -->
+  <aside id="drawer">
+    <div class="drawer-header">
+      <h2>LearnHub</h2>
+      <button id="closeBtn">✕</button>
+    </div>
+
+    <ul class="drawer-menu">
+      <li><a class="active" data-page="home">Home</a></li>
+      <li><a data-page="subjects">Subjects</a></li>
+      <li><a data-page="notifications">Notifications <span id="msgBadge">2</span> </a> </li>
+      <li><a data-page="performance">Performance</a></li>
+      <li><a data-page="profile">Profile</a></li>
+      <li><a data-page="support">Support</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main id="content"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
